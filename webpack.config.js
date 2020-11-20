@@ -2,11 +2,11 @@ require('dotenv/config');
 const path = require('path');
 
 const clientPath = path.resolve(__dirname, 'client');
-const clientPath = path.resolve(__dirname, 'server/public');
+const publicPath = path.resolve(__dirname, 'server/public');
 
 module.exports = {
   resolve: {
-    extensions: ['.js', '.jsx'];
+    extensions: ['.js', '.jsx']
   },
   entry: './client',
   output: {
@@ -20,7 +20,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             plugins: [
-              '@/plugin-transform-react-jsx'
+              '@babel/plugin-transform-react-jsx'
             ]
           }
         }
