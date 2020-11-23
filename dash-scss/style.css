@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "MontHeavy";
+  src: url(../assets/fonts/MyFontsWebfontsKit/webFonts/Mont-Heavy/font.woff); }
+html {
+  height: 100%; }
+  @media only screen and (max-width: 769px) and (min-width: 0px) {
+    html {
+      height: auto; } }
+
+body {
+  margin: 0;
+  height: 100%; }
+
+.hidden {
+  display: none; }
+
+.none {
+  visibility: hidden; }
+
+.oneHundo {
+  height: 100%; }
+
+img {
+  max-width: 100%; }
+
+p {
+  font-size: calc(22px + (32 - 22) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 161.8%;
+  color: #2b2b2b;
+  font-family: "Spartan", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
