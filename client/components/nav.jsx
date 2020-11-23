@@ -12,17 +12,22 @@ export default class Nav extends React.Component {
   render() {
     return (
       <nav>
-        <ul>
-          <li>
-            <Link to='/' className="navA">Dashboard</Link>
-          </li>
-          <li>
-            <Link to='/finances' className="navB">Finances</Link>
-          </li>
-          <li>
-            <Link to='/login' className="navC">Log Out</Link>
-          </li>
-        </ul>
+        <div className="insert-101 insert-101-1">
+          <h1>Dash</h1>
+        </div>
+        <div className="insert-101 insert-101-2">
+          <ul>
+            <li>
+              <Link to='/' className="navA">Dashboard</Link>
+            </li>
+            <li>
+              <Link to='/finances' className="navB">Finances</Link>
+            </li>
+            <li>
+              <Link to='/login' className="navC">Log Out</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     )
   }

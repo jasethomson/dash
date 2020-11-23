@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: $nav-height;
+  border-bottom: $border;
+  background: $nav-color;
+  color: $nav-font-color;
+  .insert-101-1 {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    height: 100%;
+    h1{
+      font-size: $h2-headline;
+      font-weight: normal;
+    }
+  }
+  .insert-101-2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    ul {
+      list-style: none;
+      display: flex;
+      height: 100%;
+      li {
+        display: flex;
+        align-items: center;
+        margin: 0rem 1rem;
+        a {
+          text-decoration: none;
+          color: $nav-font-color;
+          &:hover {
+            color: lighten(orangered, 20%);
+          }
+        }
+      }
+    }
+  }
+
+}

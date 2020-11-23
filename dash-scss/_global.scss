@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+  @media only screen and (max-width: 769px) and (min-width: 0px){
+     height: auto;
+  }
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: $first-font;
+}
+
+.hidden {
+  display: none;
+}
+
+.none {
+  visibility: hidden;
+}
+
+.oneHundo{
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $font-color-dark;
+  font-family: $first-font;
+}
+
+ul {
+  margin: 0rem;
+  padding: 0rem;
+}
