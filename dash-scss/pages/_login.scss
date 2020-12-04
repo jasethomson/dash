@@ -1,15 +1,11 @@
-$login-page-height: calc(100% - 56px);
-$login-page-width: 100%;
 $login-top-offset: 6rem 0rem;
 
 
 #loginContainer {
   display: flex;
   justify-content: center;
-  height: $login-page-height;
-  width: $login-page-width;
   .insert-101 {
-    padding: 6rem 0rem;
+    padding: $login-top-offset;
     .insert-102 {
       display: flex;
       justify-content: center;

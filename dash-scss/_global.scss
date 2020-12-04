@@ -12,6 +12,11 @@ body {
   background: $body-bg-color;
 }
 
+.topDiv {
+  height: $topDiv-height;
+  width: $topDiv-width;
+}
+
 #root {
   height: 100%;
 }
