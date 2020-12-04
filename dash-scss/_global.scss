@@ -9,6 +9,11 @@ body {
   margin: 0px;
   height: 100%;
   font-family: $first-font;
+  background: $body-bg-color;
+}
+
+#root {
+  height: 100%;
 }
 
 .hidden {
@@ -34,7 +39,43 @@ p {
   font-family: $first-font;
 }
 
+input {
+    font-size: $font-size;
+    height: $input-height;
+    width: $input-width;
+    padding: $input-padding;
+    border: $input-border;
+    border-radius: $input-brdr-rad;
+    &:focus {
+      outline: none;
+    }
+}
+
+.button {
+  height: $button-height;
+  width: $button-width;
+  padding: $button-padding;
+  background: $button-bg-color;
+  color: $button-color;
+  cursor: pointer;
+  border: transparent;
+  border-radius: $button-brdr-rad;
+  &:hover {
+    background: $button-hover-color;
+    border: $border;
+  }
+}
+
 ul {
   margin: 0rem;
   padding: 0rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  width: fit-content;
+  font-weight: $header-font-weight;
 }

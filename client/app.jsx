@@ -2,6 +2,7 @@ import React from 'react';
 import AppContext from './context';
 import Dashboard from './components/dashboard';
 import Finances from './components/finances';
+import Recipes from './components/recipes';
 import Login from './components/login';
 import ForgotPassword from './components/forgotpassword';
 import Nav from './components/nav';
@@ -36,6 +37,7 @@ export default class App extends React.Component {
         <Router>
           <Nav />
           <Route exact path='/finances' component={Finances} />
+          <Route exact path='/recipes' component={Recipes} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/forgotpassword' component={ForgotPassword} />
           <Route exact path='/' component={Dashboard}></Route>

@@ -1,7 +1,7 @@
 import React from 'React';
 import AppContext from '../context';
 
-export default class Finances extends React.Component {
+export default class Recipes extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,8 +11,8 @@ export default class Finances extends React.Component {
 
   render() {
     return (
-      <div id="financesContainer" className="topDiv financesContainer">
-        Finances
+      <div id="recipesContainer" className="topDiv insert-101 insert-101-1">
+        Recipes
       </div>
     )
   }

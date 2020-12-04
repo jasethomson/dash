@@ -26,21 +26,31 @@ export default class Login extends React.Component {
 
   render() {
     return (
-      <div id="loginContainer" className="insert101 insert101A">
-        <h1>Login</h1>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Email:
-          <input type="text" value={this.state.value.email} onChange={() => this.handleChange('email')} />
-          </label>
-          <label>
-            Password:
-          <input type="text" value={this.state.value.password} onChange={() => this.handleChange('password')} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-        <div className="forgotPassword">
-          <Link to='/forgotpassword' className="navC">Forgot Password</Link>
+      <div id="loginContainer" className="topDiv loginContainer">
+        <div className="insert-101 insert-101-1">
+          <div className="insert-102 insert-102-1">
+            <h1>Login</h1>
+          </div>
+          <div className="insert-102 insert-102-2">
+            <form onSubmit={this.handleSubmit}>
+              <div className="insert-103 insert-103-1">
+                <label className="none">Email:</label>
+                <input type="text" value={this.state.value.email} onChange={() => this.handleChange('email')} placeholder="Email" />
+              </div>
+              <div className="insert-103 insert-103-2">
+                <label className="none">Password:</label>
+                <input type="text" value={this.state.value.password} onChange={() => this.handleChange('password')} placeholder="Password" />
+              </div>
+              <div className="insert-103 insert-103-3">
+                <input className="button" type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+          <div className="insert-102 insert-102-3">
+            <div className="forgotPassword">
+              <Link to='/forgotpassword' className="navC">Forgot Password?</Link>
+            </div>
+          </div>
         </div>
       </div>
     );
