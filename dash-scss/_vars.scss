@@ -1,6 +1,4 @@
-//Page height
-$topDiv-height: calc(100% - 56px);
-$topDiv-width: 100%;
+
 
 //Font
 $first-font: 'Montserrat', sans-serif;
@@ -20,6 +18,10 @@ $body-bg-color: #f8f8f8;
 $nav-height: 56px;
 $nav-color: #20232a;
 $nav-font-color: $font-color-light;
+
+//Page height
+$topDiv-height: calc(100% - #{$nav-height});
+$topDiv-width: 100%;
 
 //Border
 $border: 1px solid rgba(0,0,0,.125);
