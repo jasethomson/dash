@@ -24,6 +24,9 @@ export default class Nav extends React.Component {
               <Link to='/finances' className="navB">Finances</Link>
             </li>
             <li>
+              <Link to='/recipes' className="navB">Recipes</Link>
+            </li>
+            <li>
               <Link to='/login' className="navC">Log Out</Link>
             </li>
           </ul>
