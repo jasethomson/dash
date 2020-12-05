@@ -16,7 +16,9 @@ export default class Login extends React.Component {
   }
 
   handleChange(event, type) {
-    this.setState({ value: event.target.value[type] });
+    let stateCopy = this.state;
+    stateCopy.value[type] = event.target.value;
+    this.setState({ ...stateCopy });
   }
 
   handleSubmit(event) {
@@ -35,11 +37,11 @@ export default class Login extends React.Component {
             <form onSubmit={this.handleSubmit}>
               <div className="insert-103 insert-103-1">
                 <label className="none">Email:</label>
-                <input type="text" value={this.state.value.email} onChange={() => this.handleChange('email')} placeholder="Email" />
+                <input type="text" value={this.state.value.email} onChange={(event) => this.handleChange(event, 'email')} placeholder="Email" />
               </div>
               <div className="insert-103 insert-103-2">
                 <label className="none">Password:</label>
-                <input type="text" value={this.state.value.password} onChange={() => this.handleChange('password')} placeholder="Password" />
+                <input type="password" value={this.state.value.password} onChange={(event) => this.handleChange(event, 'password')} placeholder="Password" />
               </div>
               <div className="insert-103 insert-103-3">
                 <input className="button" type="submit" value="Submit" />

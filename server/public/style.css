@@ -66,10 +66,14 @@ a {
   text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 500; }
+
+table {
+  width: 100%; }
 
 nav {
   display: -webkit-box;
@@ -159,5 +163,15 @@ nav {
         font-weight: 600; }
         #loginContainer .insert-101 .insert-102-3 a:hover {
           color: #0000cc; }
+
+#financesContainer .insert-101 {
+  height: 100%; }
+  #financesContainer .insert-101 .insert-102 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50%; }
+    #financesContainer .insert-101 .insert-102 .insert-103 {
+      width: 50%; }
 
 /*# sourceMappingURL=style.css.map */
